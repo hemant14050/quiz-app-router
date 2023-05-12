@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Quiz App with React and React Router
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple quiz application built with React and React Router. The purpose of this app is to practice using React Router for navigation and displaying selected answers and scores after submitting the quiz. It also includes a dark/light mode feature to enhance the user experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Quiz questions and options are dynamically loaded from a data source.
+- React Router is used for navigation between different quiz pages.
+- Selected answers are displayed to the user.
+- Correct and wrong answers are highlighted after submitting the quiz.
+- Dark/light mode feature for a personalized user experience.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run the quiz app locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+   ```bash
+   git clone https://github.com/hemant14050/quiz-app-router.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Change to the project directory:
 
-### `npm run build`
+   ```bash
+   cd quiz-app
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install the dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server:
 
-### `npm run eject`
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Open your web browser and visit `http://localhost:3000` to access the app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The quiz app allows users to navigate through the quiz questions using React Router. They can select their answers and submit the quiz to see the results. After submitting, the correct answers are highlighted in green, while the wrong answers are highlighted in red. The app also provides a dark/light mode feature for a customized user experience.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To customize the quiz questions and options, you can modify the data source file located in `src/QuestionsData.js`. Simply update the array of question objects with your desired questions and options.
 
-## Learn More
+To customize the styling of the app, you can modify the CSS files located in `src/index.css`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Dark/Light Mode
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The quiz app includes a dark/light mode feature for a personalized user experience. By default, the app is set to light mode. However, users can switch to dark mode by clicking on the toggle button located at the top of app.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To customize the dark/light mode feature, you can modify the CSS styles in the `index.css` file. The `.light-mode` class contains the CSS variables that define the colors for light mode and `.dark-mode` for dark mode. Adjust the values of these variables to match your desired color scheme.
