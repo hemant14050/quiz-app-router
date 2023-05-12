@@ -94,7 +94,7 @@ function Quiz() {
         </div>
       </form>
 
-      <ReviewAns submittedData={submittedData}/>
+      <ReviewAns submittedData={submittedData} setQuestionIndex={setQuestionIndex} />
     </div>
   )
 }

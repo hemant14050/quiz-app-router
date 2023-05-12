@@ -62,7 +62,7 @@ body {
   margin-bottom: 20px;
 }
 
-.box button {
+.btnContainer button, .restart button {
   background-color: var(--btn-bg);
   border: 1px solid var(--text-color);
   border-radius: 0.5rem;
@@ -71,23 +71,23 @@ body {
   font-weight: 600;
 }
 
-.box .btn {
+.btnContainer .btn, .restart .btn {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   color: var(--text-color);
 }
 
 
-.box .btn:hover {
+.btnContainer .btn:hover , .restart .btn:hover {
   background-color: var(--btn-hover);
   color: var(--btn-bg);
 }
 
-.box .btn:active {
+.btnContainer .btn:hover , .restart .btn:active {
   transform: scale(0.98);
 }
 
-.box .btn:focus {
+.btnContainer .btn:hover , .restart .btn:focus {
   outline: none;
 }
 
@@ -169,6 +169,24 @@ body {
   color: #fff;
   border-radius: 0.5rem;
   padding: 5px 5px;
+}
+
+.answers button {
+  background-color: #2b68f5;
+  border: 1px solid var(--text-color);
+  border-radius: 0.5rem;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.answers button:hover {
+  background-color: #fff;
+  color: #2b68f5;
 }
 
 @media only screen and (max-width: 600px) {
