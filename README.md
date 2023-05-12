@@ -23,7 +23,7 @@ To run the quiz app locally, follow these steps:
 2. Change to the project directory:
 
    ```bash
-   cd quiz-app
+   cd quiz-app-router
    ```
 
 3. Install the dependencies:
