@@ -62,32 +62,34 @@ body {
   margin-bottom: 20px;
 }
 
-.btnContainer button, .restart button {
+.box button{
   background-color: var(--btn-bg);
   border: 1px solid var(--text-color);
   border-radius: 0.5rem;
   padding: 10px 20px;
   font-size: 1.2rem;
   font-weight: 600;
+  color: var(--text-color);
+  cursor: pointer;
 }
 
-.btnContainer .btn, .restart .btn {
+.box .btn {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   color: var(--text-color);
 }
 
 
-.btnContainer .btn:hover , .restart .btn:hover {
+.box .btn:hover {
   background-color: var(--btn-hover);
   color: var(--btn-bg);
 }
 
-.btnContainer .btn:hover , .restart .btn:active {
+.box .btn:hover {
   transform: scale(0.98);
 }
 
-.btnContainer .btn:hover , .restart .btn:focus {
+.box .btn:hover {
   outline: none;
 }
 
@@ -172,16 +174,7 @@ body {
 }
 
 .answers button {
-  background-color: #2b68f5;
-  border: 1px solid var(--text-color);
-  border-radius: 0.5rem;
-  padding: 5px 10px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-right: 8px;
-  margin-bottom: 8px;
-  color: #fff;
-  cursor: pointer;
+  background-color: #4e7ce9;
 }
 
 .answers button:hover {
