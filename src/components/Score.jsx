@@ -10,7 +10,7 @@ function Score() {
     <div className='box textcenter'>
       <h1>Congratulations!</h1>
       <p>You have completed the quiz.</p>
-      <p>Your score is: {state.score} </p>
+      <p>Your score is: <span className='scoreCnt'>{state.score}</span> </p>
 
       <div className='answers'>
       {
@@ -31,7 +31,7 @@ function Score() {
       <div className='restart'>
         <p>Want to try again?</p>
         <button className='btn' 
-        onClick={() => navigate('/quiz')}
+        onClick={() => navigate('/')}
         >Restart</button>
       </div>
     </div>

@@ -5,6 +5,7 @@ import Quiz from './components/Quiz';
 import Score from './components/Score';
 import NotFound from './components/NotFound'; 
 import { useEffect, useState } from 'react';
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 function App() {
 
@@ -20,10 +21,18 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <div className = "box-container">
+    <div className = "App">
+      <div className="box" >
+        <DarkModeSwitch
+            checked={!isDarkMode}
+            onClick={() => setIsDarkMode(!isDarkMode)}
+            moonColor={"#000"}
+            sunColor={"#fff"}
+            style={{ width:"100%", textAlign: "center" }}
+          />
+      </div>
       <Routes>
-        <Route path="/" element={<Home isDarkMode={isDarkMode} 
-        setIsDarkMode={setIsDarkMode}  />} />
+        <Route path="/" element={<Home />} />
         <Route path='/quiz' element={<Quiz/>} />
         <Route path='/score' element={<Score/>}/>
         <Route path='/*' element={<NotFound/>} />

@@ -1,19 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import { DarkModeSwitch } from "react-toggle-dark-mode";
 
-const Home = ({isDarkMode, setIsDarkMode}) => {
+const Home = () => {
   const navigate = useNavigate();
 
   return (
     <div className="box textcenter">
-      <DarkModeSwitch
-        checked={!isDarkMode}
-        onClick={() => setIsDarkMode(!isDarkMode)}
-        moonColor={"#000"}
-        sunColor={"#fff"}
-        style={{ position: "absolute", right: "10", top: "10" }}
-      />
-
       <h1 className="title">Welcome to Quiz Challenge App</h1>
 
       <div className="description">
