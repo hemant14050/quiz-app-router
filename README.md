@@ -30,6 +30,7 @@ To run the quiz app locally, follow these steps:
 
    ```bash
    npm install
+   npm i react-toggle-dark-mode
    ```
 
 4. Start the development server:
