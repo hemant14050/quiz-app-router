@@ -93,6 +93,8 @@ function Quiz() {
 
         </div>
       </form>
+
+      <ReviewAns submittedData={submittedData}/>
     </div>
   )
 }
