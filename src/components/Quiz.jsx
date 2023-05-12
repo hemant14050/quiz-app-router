@@ -2,6 +2,7 @@ import {React, useEffect, useState} from 'react';
 import {QuestionsData} from '../QuestionsData';
 import Question from './Question';
 import { useNavigate } from 'react-router-dom';
+import ReviewAns from './ReviewAns';
 
 function Quiz() {
   // console.log(QuestionsData);
@@ -86,8 +87,8 @@ function Quiz() {
             }}>Next</button>
           </div>
           
-          <button type='submit' className={questionIndex < QuestionsData.length-1 ? 'disabled':'btn'}
-            disabled={questionIndex < QuestionsData.length-1? true:false}
+          <button type='submit' className={Object.keys(submittedData).length !== QuestionsData.length ? 'disabled':'btn'}
+            disabled={Object.keys(submittedData).length !== QuestionsData.length? true:false}
           >Submit</button>
 
         </div>
